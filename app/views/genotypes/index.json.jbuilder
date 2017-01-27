@@ -1,0 +1,1 @@
+json.array! @genotypes, partial: 'genotypes/genotype', as: :genotype

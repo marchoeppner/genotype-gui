@@ -1,0 +1,52 @@
+<%= form_for(genotype) do |f| %>
+  <% if genotype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(genotype.errors.count, "error") %> prohibited this genotype from being saved:</h2>
+
+      <ul>
+      <% genotype.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :chromosome %>
+    <%= f.text_field :chromosome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :position %>
+    <%= f.number_field :position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :reference %>
+    <%= f.text_field :reference %>
+  </div>
+
+  <div class="field">
+    <%= f.label :allele %>
+    <%= f.text_field :allele %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genotype %>
+    <%= f.text_field :genotype %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment %>
+    <%= f.text_field :comment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :diagnosis_id %>
+    <%= f.number_field :diagnosis_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chromosome:</strong>
+  <%= @genotype.chromosome %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @genotype.position %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @genotype.reference %>
+</p>
+
+<p>
+  <strong>Allele:</strong>
+  <%= @genotype.allele %>
+</p>
+
+<p>
+  <strong>Genotype:</strong>
+  <%= @genotype.genotype %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @genotype.comment %>
+</p>
+
+<p>
+  <strong>Diagnosis:</strong>
+  <%= @genotype.diagnosis_id %>
+</p>
+
+<%= link_to 'Edit', edit_genotype_path(@genotype) %> |
+<%= link_to 'Back', genotypes_path %>

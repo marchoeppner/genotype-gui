@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Genotypes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromosome</th>
+      <th>Position</th>
+      <th>Reference</th>
+      <th>Allele</th>
+      <th>Genotype</th>
+      <th>Comment</th>
+      <th>Diagnosis</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @genotypes.each do |genotype| %>
+      <tr>
+        <td><%= genotype.chromosome %></td>
+        <td><%= genotype.position %></td>
+        <td><%= genotype.reference %></td>
+        <td><%= genotype.allele %></td>
+        <td><%= genotype.genotype %></td>
+        <td><%= genotype.comment %></td>
+        <td><%= genotype.diagnosis_id %></td>
+        <td><%= link_to 'Show', genotype %></td>
+        <td><%= link_to 'Edit', edit_genotype_path(genotype) %></td>
+        <td><%= link_to 'Destroy', genotype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Genotype', new_genotype_path %>
