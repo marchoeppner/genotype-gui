@@ -1,0 +1,1 @@
+json.partial! "chromosomes/chromosome", chromosome: @chromosome

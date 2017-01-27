@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chromosomes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chromosomes.each do |chromosome| %>
+      <tr>
+        <td><%= chromosome.name %></td>
+        <td><%= link_to 'Show', chromosome %></td>
+        <td><%= link_to 'Edit', edit_chromosome_path(chromosome) %></td>
+        <td><%= link_to 'Destroy', chromosome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chromosome', new_chromosome_path %>

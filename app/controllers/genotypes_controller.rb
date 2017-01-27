@@ -15,6 +15,8 @@ class GenotypesController < ApplicationController
   # GET /genotypes/new
   def new
     @genotype = Genotype.new
+    @diagnoses = Diagnosis.all
+    @chromosomes = Chromosome.all
   end
 
   # GET /genotypes/1/edit
