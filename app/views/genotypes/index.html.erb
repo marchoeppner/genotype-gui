@@ -19,7 +19,7 @@
   <tbody>
     <% @genotypes.each do |genotype| %>
       <tr>
-        <td><%= genotype.chromosome %></td>
+        <td><%= genotype.chromosome.name %></td>
         <td><%= genotype.position %></td>
         <td><%= genotype.reference %></td>
         <td><%= genotype.allele %></td>

@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :chromosome %>
-    <%= f.collection_select(:chromosome_id, @chromosomes, :id, :name, {:prompt => false}) %>
+    <%= f.collection_select(:chromosome_id, Chromosome.all, :id, :name, {:prompt => false}) %>
   </div>
 
   <div class="field">
@@ -43,7 +43,7 @@
 
   <div class="field">
     <%= f.label :diagnosis_id %>
-    <%= f.collection_select(:diagnosis_id, @diagnoses, :id, :name, {:prompt => false}) %>
+    <%= f.collection_select(:diagnosis_id, Diagnosis.all, :id, :name, {:prompt => false}) %>
   </div>
 
   <div class="actions">
