@@ -37,6 +37,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :dbsnp_id %>
+    <%= f.text_field :dbsnp_id %>
+  </div>
+
+  <div class="field">
     <%= f.label :comment %>
     <%= f.text_field :comment %>
   </div>
@@ -45,6 +50,12 @@
     <%= f.label :diagnosis_id %>
     <%= f.collection_select(:diagnosis_id, Diagnosis.all, :id, :name, {:prompt => false}) %>
   </div>
+
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {:prompt => false}) %>
+  </div> 
 
   <div class="actions">
     <%= f.submit %>

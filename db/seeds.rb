@@ -12,3 +12,9 @@ chromosomes = [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "
 chromosomes.each do |chr|
 	Chromosome.create(name: chr)
 end
+
+categories = [ "Health", "Disease", "Pharmacogenomics" ]
+
+categories.each do |cat|
+	Category.create(name: cat)
+end

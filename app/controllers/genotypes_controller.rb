@@ -71,6 +71,6 @@ class GenotypesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def genotype_params
-      params.require(:genotype).permit(:chromosome, :chromosome_id, :position, :reference, :allele, :genotype, :comment, :diagnosis_id)
+      params.require(:genotype).permit(:chromosome, :chromosome_id, :position, :reference, :allele, :genotype, :comment, :diagnosis_id, :category_id, :dbsnp_id)
     end
 end

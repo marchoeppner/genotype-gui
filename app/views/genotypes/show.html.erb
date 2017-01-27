@@ -26,6 +26,11 @@
 </p>
 
 <p>
+  <strong>dbSNP ID:</strong>
+  <%= @genotype.dbsnp_id %>
+</p>
+
+<p>
   <strong>Comment:</strong>
   <%= @genotype.comment %>
 </p>
@@ -33,6 +38,11 @@
 <p>
   <strong>Diagnosis:</strong>
   <%= @genotype.diagnosis.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @genotype.category.name %>
 </p>
 
 <%= link_to 'Edit', edit_genotype_path(@genotype) %> |

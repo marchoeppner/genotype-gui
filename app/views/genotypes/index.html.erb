@@ -10,8 +10,10 @@
       <th>Reference</th>
       <th>Allele</th>
       <th>Genotype</th>
+      <th>dbSNP ID</th>
       <th>Comment</th>
       <th>Diagnosis</th>
+      <th>Category</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,8 +26,10 @@
         <td><%= genotype.reference %></td>
         <td><%= genotype.allele %></td>
         <td><%= genotype.genotype %></td>
+        <td><%= genotype.dbsnp_id %></td>
         <td><%= genotype.comment %></td>
         <td><%= genotype.diagnosis.name %></td>
+	<td><%= genotype.category.name %></td>
         <td><%= link_to 'Show', genotype %></td>
         <td><%= link_to 'Edit', edit_genotype_path(genotype) %></td>
         <td><%= link_to 'Destroy', genotype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
