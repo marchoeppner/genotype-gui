@@ -1,0 +1,33 @@
+header li {
+
+	float: left;
+}
+
+header a {
+	display: block;
+	color: white;
+	font-size: 20;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 16px;
+
+}
+
+header a:hover {
+	background: darkgrey;
+	
+}
+
+header li a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+header ul {
+    		list-style-type: none;
+    		margin: 0;
+    		padding:0;
+		overflow: hidden;
+		background: #0093d6;
+}
+

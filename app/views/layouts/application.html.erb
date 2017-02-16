@@ -10,18 +10,7 @@
 
   <body>
 
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "IKMB Genotype database", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   root_path %></li>
-            <li><%= link_to "Genotypes", genotypes_path %></li>
-            <li><%= link_to "Diagnoses", diagnoses_path %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+   <%= render 'layouts/header' %>
     
     <div class="container">
       <%= yield %>

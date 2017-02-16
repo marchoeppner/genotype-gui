@@ -20,10 +20,7 @@
       <tr>
         <td><%= diagnosis.name %></td>
         <td><%= diagnosis.short_name %></td>
-        <td><%= diagnosis.summary %></td>
-        <td><%= diagnosis.inheritance %></td>
-        <td><%= diagnosis.evolution %></td>
-        <td><%= diagnosis.comment %></td>
+        <td><%= diagnosis.summary[0...400] %> [...]</td>
         <td><%= link_to 'Show', diagnosis %></td>
         <td><%= link_to 'Edit', edit_diagnosis_path(diagnosis) %></td>
         <td><%= link_to 'Destroy', diagnosis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
